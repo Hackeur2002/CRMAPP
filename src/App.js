@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+
+
+import Sidebar from "./DefaultLayout/Sidebar/Sidebar";
+import Navbar from "./DefaultLayout/Navbar/Navbar"
+import routes from './routes';
+import { Routes, Route, Navigate, Outlet } from "react-router-dom";
+import Grid from '@mui/material/Unstable_Grid2';
 import './App.css';
 
-function App() {
+
+
+export default function App() {
+
+  {/*const getRoutes = (allRoutes) =>
+    allRoutes.map((route) => {
+      if (route.route) {
+        return <Routes key={route.key}><Route exact path={route.route} element={route.component} key={route.key} /></Routes>;
+      }
+      return null;
+    });*/}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+            <Grid container >
+              <Grid md={2} className="sidebar">
+                <Sidebar/>
+              </Grid>
+              <Grid  md={10}>
+                {/*getRoutes(routes)*/}
+                <Outlet/>
+              </Grid>
+            </Grid>
+    
+      
   );
 }
-
-export default App;

@@ -1,0 +1,73 @@
+.App {
+    /* fallback for old browsers */
+      background: #1f8e27;
+    
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, rgba(31, 142, 39, 0.85), rgba(215, 60, 127, 0.85));
+    
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, rgba(31, 142, 39, 0.85), rgba(215, 60, 127, 0.85))
+  }  
+  .Auth-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100wh;
+    height: 100vh;
+  }
+  
+  .Auth-form {
+    width: 50%;
+    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+    display:"flex"; 
+    flex-direction: "row";
+  }
+  
+  .Auth-form-content {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  
+  .Auth-form-title {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: 800;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+  }
+  input{
+    width: 50px;
+  }
+            .gradient-custom-2 {
+              /* fallback for old browsers */
+              background: #1f8e27;
+      
+              /* Chrome 10-25, Safari 5.1-6 */
+              background: -webkit-linear-gradient(to right, rgba(31, 142, 39, 0.85), rgba(215, 60, 127, 0.85));
+      
+              /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+              background: linear-gradient(to right, rgba(31, 142, 39, 0.85), rgba(215, 60, 127, 0.85))
+            }
+      
+            @media (min-width: 768px) {
+              .gradient-form {
+                height: 100vh;
+              }
+            }
+      
+            @media (min-width: 769px) {
+              .gradient-custom-2 {
+                border-top-right-radius: .3rem;
+                border-bottom-right-radius: .3rem;
+              }
+            }
